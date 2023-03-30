@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	
 	if (format == NULL)
 	{
-		return (-1)
+		return (-1);
 	}
 
 	for (i = 0; format[i] != '\0'; i++)
@@ -23,8 +23,11 @@ int _printf(const char *format, ...)
 			//function = get_op_func formst{i + 1}
 		}
 		else{
+			_putchar(format[i]);
 		}
 	}
+	
+	return (0);
 
 	va_end(arg);
 }
