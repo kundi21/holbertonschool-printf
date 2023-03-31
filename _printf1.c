@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			k = format (i + 1);
+			k = format [i + 1];
 			get_op_func(k, arg);
 		}
 		else

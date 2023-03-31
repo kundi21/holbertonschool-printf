@@ -9,6 +9,6 @@ void printstring(char *format)
 
 	for (n = 0; format[n] = '\0'; n++)
 	{
-		_putchar(format[n])
+		_putchar(format[n]);
 	}
 }

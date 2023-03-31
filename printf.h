@@ -24,6 +24,7 @@ void _print_number(int);
 int (*get_op_func(char s))(va_list);
 int _printf(const char *format, ...);
 int printChar(va_list);
+void printstring(char *format);
 int printString(va_list);
 int printPercentage(va_list);
 int printNum(va_list);
