@@ -10,7 +10,7 @@ int printChar(va_list args)
 
 int printString(va_list args)
 {
-	return (putstring(va_arg(args, char *)));
+	return (printString(va_arg(args, char *)));
 }
 
 int printNum(va_list args)
