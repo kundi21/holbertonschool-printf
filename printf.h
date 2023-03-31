@@ -17,14 +17,13 @@ typedef struct op
     int (*f)(va_list);
 } op_t;
 
-int _putchar(char);
-int _puts(char *);
-int _strlen(char *);
-void _print_number(int);
+int _putchar(char c);
+int _putstrs(char *str);
+int _putint(int n);
 int (*get_op_func(char s))(va_list);
 int _printf(const char *format, ...);
+
 int printChar(va_list);
-void printstring(char *format);
 int printString(va_list);
 int printPercentage(va_list);
 int printNum(va_list);

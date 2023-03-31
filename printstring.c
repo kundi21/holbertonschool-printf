@@ -7,7 +7,7 @@ void printstring(char *format)
 {
 	int n;
 
-	for (n = 0; format[n] = '\0'; n++)
+	for (n = 0; format[n] != '\0'; n++)
 	{
 		_putchar(format[n]);
 	}
