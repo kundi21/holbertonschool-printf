@@ -8,14 +8,14 @@ int printChar(va_list args)
 	return (_putchar(va_arg(args, int)));
 }
 
-int printString(__attribute__((unused)) va_list args)
+int printString(va_list args)
 {
-	return (0);
+	return (putstring(va_arg(args, char *)));
 }
 
-int printNum(__attribute__((unused)) va_list args)
+int printNum(va_list args)
 {
-	return (0);
+// VAMO A VER COMO HAGO//
 }
 int printPercentage(__attribute__((unused)) va_list args)
 {
