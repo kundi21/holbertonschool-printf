@@ -22,17 +22,15 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			k = format(i + 1);
+			k = format (i + 1);
 			get_op_func(k, arg);
 		}
 		else
 		{
-			_putchar(format[i]);
+			printstring(format[i]);
 		}
 	}
-	
 	return (0);
-
 	va_end(arg);
 }
 	
