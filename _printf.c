@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			//function = get_op_func formst{i + 1}
+			//function = get_op_func format[i + 1]
 		}
 		else{
 			_putchar(format[i]);
