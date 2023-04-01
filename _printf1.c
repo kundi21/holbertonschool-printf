@@ -27,7 +27,8 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				//que pasa cuando no encuentra una funcion
+				/**que pasa si no encuentra una funcion
+				 */
 			}
 		}
 		else

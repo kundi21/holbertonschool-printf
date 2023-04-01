@@ -10,24 +10,18 @@ int printChar(va_list args)
 
 int printString(va_list args)
 {
-	if (str == NULL)
 	return (_putstrs(va_arg(args, char*)));
 }
 
 int printNum(va_list args)
 {
 	long int n = va_arg(args, int);
-	int count = 0;
-	if (n < 0)
-	{
-		_putchar('-');
-		count++;
-		n *= -1;
-	}
 
-//	count += _itoa(n, 10, "0123456789");//falta hacer un itoa.c pero tendria que funcionar cuando lo haga
+	char str[100];
 
-	return (count);
+	_itoa(n, str);
+
+	return (_putstrs(str));
 }
 int printPercentage(__attribute__((unused)) va_list args)
 {

@@ -33,4 +33,8 @@ int printBinary(va_list);
 int printHex(va_list);
 int printHexUpper(va_list);
 
+int _atoi(char *str);
+void _itoa(int num, char* str);
+void reverse(char str[], int length);
+
 #endif
