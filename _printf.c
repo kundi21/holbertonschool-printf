@@ -1,8 +1,8 @@
-#include "main.h" 
+#include "main.h"
 /**
- * _printf - -
- * @format
- * Return: -
+ * _printf - _printf
+ * @format: format
+ * Return: - _printf
  */
 int _printf(const char *format, ...)
 {
@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	int (*func)(va_list);
 
 	va_start(arg, format);
-	
+
 	if (!format)
 		return (-1);
 
@@ -27,8 +27,6 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				/**que pasa si no encuentra una funcion
-				 */
 			}
 		}
 		else

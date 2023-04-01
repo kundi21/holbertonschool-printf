@@ -1,10 +1,8 @@
 #ifndef _PRINTF_H
 #define _PRINTF_H
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <unistd.h>
 #include <stdarg.h>
-#include <limits.h>
 /**
  * struct op - Struct op
  *
@@ -13,8 +11,8 @@
  */
 typedef struct op
 {
-    char op;
-    int (*f)(va_list);
+	char op;
+	int (*f)(va_list);
 } op_t;
 
 int _putchar(char c);
@@ -34,7 +32,7 @@ int printHex(va_list);
 int printHexUpper(va_list);
 
 int _atoi(char *str);
-void _itoa(int num, char* str);
+void _itoa(int num, char *str);
 void reverse(char str[], int length);
 
 #endif
