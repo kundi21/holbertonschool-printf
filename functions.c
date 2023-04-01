@@ -10,15 +10,7 @@ int printChar(va_list args)
 
 int printString(va_list args)
 {
-	 if (str == NULL)
-        {
-		_putchar("(");
-		_putchar("n");
-		_putchar("u");
-		_putchar("l");
-		_putchar("l");
-		_putchar(")");
-        }
+	if (str == NULL)
 	return (_putstrs(va_arg(args, char*)));
 }
 
