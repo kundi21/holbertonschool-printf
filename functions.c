@@ -10,23 +10,7 @@ int printChar(va_list args)
 
 int printString(va_list args)
 {
-	int i;
-	
-	char *str = va_arg(args, char*);
-	if (str[i] == NULL)
-	{
-		_putchar("(");
-		_putchar("n");
-		_putchar("u");
-		_putchar("l");
-		_putchar("l");
-		_putchar(")");
-	}
-	for (i = 0; str[i] = '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
-	return (_putstrs(str));
+	return (_putstrs(va_arg(args, char*)));
 }
 
 int printNum(va_list args)
@@ -40,7 +24,7 @@ int printNum(va_list args)
 		n *= -1;
 	}
 
-	count += _itoa(n, 10, "0123456789");//falta hacer un itoa.c pero tendria que funcionar cuando lo haga
+//	count += _itoa(n, 10, "0123456789");//falta hacer un itoa.c pero tendria que funcionar cuando lo haga
 
 	return (count);
 }

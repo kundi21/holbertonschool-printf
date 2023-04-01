@@ -6,38 +6,35 @@
  */
 int _printf(const char *format, ...)
 {
-	char k;
-	int i, n = 0;
+	int i, count = 0;
 	va_list arg;
 	int (*func)(va_list);
 
 	va_start(arg, format);
-
 	
-	if (format == NULL)
-	{
+	if (!format)
 		return (-1);
-	}
 
-	for (i = 0; format[i] != '\0'; i++)
+	for (i = 0; format[i]; i++)
 	{
 		if (format[i] == '%')
 		{
-			k = format [i + 1];
-			func = get_op_func(k);
-			n+= func(arg);
-			i++;
+			func = get_op_func(format[i + 1]);
+			if (func)
+			{
+				count += func(arg);
+				i++;
+			}
+			else
+			{
+				//que pasa cuando no encuentra una funcion
+			}
 		}
 		else
-		{
-			_putchar(format[i]);
-			n++;
-		}
+			count += _putchar(format[i]);
 	}
 
 	va_end(arg);
 
-	return (n);
+	return (count);
 }
-	
-
