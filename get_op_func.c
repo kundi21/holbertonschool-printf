@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 /**
  */
 int (* get_op_func(char s))(va_list)

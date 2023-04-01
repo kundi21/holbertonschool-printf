@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 
 void reverse(char *str, int len) {
     int i = 0, j = len - 1;
