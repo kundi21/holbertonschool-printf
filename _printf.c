@@ -27,6 +27,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
+				count += _putchar('%');
 			}
 		}
 		else
