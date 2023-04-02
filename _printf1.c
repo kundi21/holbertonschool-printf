@@ -1,7 +1,7 @@
 #include "printf.h"
 /**
  * _printf - -
- * @format
+ * @format: -
  * Return: -
  */
 int _printf(const char *format, ...)
