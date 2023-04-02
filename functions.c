@@ -44,7 +44,7 @@ int printPercentage(__attribute__((unused)) va_list args)
 /**
  * printSpace -  print a space
  * @args: Lista
- * return
+ * Return: Return a space
  */
 int printSpace(__attribute__((unused)) va_list args)
 {
