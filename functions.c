@@ -41,3 +41,13 @@ int printPercentage(__attribute__((unused)) va_list args)
 {
 	return (_putchar('%'));
 }
+/**
+ * printSpace - This function print a space.
+ * @args: Elemento de la lista.
+ */
+void printSpace(__attribute__((unused)) va_list args)
+{
+	return (_putchar(' '));
+}
+
+

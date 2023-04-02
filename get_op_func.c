@@ -7,6 +7,7 @@
 int (*get_op_func(char s))(va_list)
 {
 	op_t ops[] = {
+		{' ', printSpace},
 		{'c', printChar},
 		{'s', printString},
 		{'%', printPercentage},

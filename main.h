@@ -34,6 +34,7 @@ int printOctal(va_list);
 int printBinary(va_list);
 int printHex(va_list);
 int printHexUpper(va_list);
+void printSpace(va_list args);
 
 int _atoi(char *str);
 void _itoa(int num, char *str);
