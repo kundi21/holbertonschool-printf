@@ -14,7 +14,7 @@ int (*get_op_func(char s))(va_list)
 		{'%', printPercentage},
 		{'d', printNum},
 		{'i', printNum},
-		{'\0', printNothing},
+		{'\0', NULL},
 	};
 
 	int i;

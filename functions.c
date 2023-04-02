@@ -50,12 +50,3 @@ int printSpace(__attribute__((unused)) va_list args)
 {
 	return (_putchar(' '));
 }
-/**
- * printNothing - Print Nothing.
- * @args: List
- * Return: Nothing
- */
-int printNothing(__attribute__((unused)) va_list args)
-{
-	return (_putchar(""));
-}
