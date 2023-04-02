@@ -23,6 +23,7 @@ int _putint(int n);
 int (*get_op_func(char s))(va_list);
 int _printf(const char *format, ...);
 void negativenumber(int num, char *str);
+void negativenumber1(int num, char *str);
 
 int printChar(va_list);
 int printString(va_list);
@@ -36,6 +37,8 @@ int printHexUpper(va_list);
 
 int _atoi(char *str);
 void _itoa(int num, char *str);
+void _itoa1(int num, char *str);
 void reverse(char str[], int length);
+void reverse1(char str[], int length);
 
 #endif
