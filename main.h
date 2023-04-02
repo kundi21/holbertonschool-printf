@@ -3,6 +3,8 @@
 
 #include <unistd.h>
 #include <stdarg.h>
+#include <stdio.h>
+#include <stddef.h>
 /**
  * struct op - Struct op
  *
@@ -20,6 +22,7 @@ int _putstrs(char *str);
 int _putint(int n);
 int (*get_op_func(char s))(va_list);
 int _printf(const char *format, ...);
+void negativenumber(int num, char *str);
 
 int printChar(va_list);
 int printString(va_list);
