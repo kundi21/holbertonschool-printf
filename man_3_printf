@@ -1,0 +1,21 @@
+NAME
+           	_printf
+SYNOPSIS
+#include “main.h”
+int _printf(const char *format, ...)
+_printf is a program to print content. You can use this program to print: strings, characters and integers. To call this program you have to write the nameof this program and  insert between the  brackets the content you want  to print. In a double quotation marks you can write a string of characters and printit. If you add a coma after the string. You can add content in a specific part of the string. You have to add a percent and a character to identify which type of content you want to add. Where you add the percent you print the content after the coma. 
+
+Example:
+
+	_printf(“Hello Worl%c”, d)
+
+Output
+
+	Hello World
+
+Types of content
+        
+        “%c”:		CHAR
+	“%s”:		STRING
+        “%s”:		NUMBER
+        “%d”:		NUMBER
